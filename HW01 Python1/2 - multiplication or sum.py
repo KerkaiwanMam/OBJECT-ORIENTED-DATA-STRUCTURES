@@ -15,6 +15,8 @@ The result is 100
 
 '''
 
+
+
 print("*** multiplication or sum ***")
 num1,num2 = map(int,input("Enter num1 num2 : ").split())
 
