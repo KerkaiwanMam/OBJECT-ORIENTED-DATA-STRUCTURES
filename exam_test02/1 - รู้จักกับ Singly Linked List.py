@@ -15,7 +15,7 @@ class LinkedList:
         while cur.next != None:
             s += str(cur.next.value) + " "
             cur = cur.next
-        return s
+        return s  
 
     def isEmpty(self):
         return self.head == None
