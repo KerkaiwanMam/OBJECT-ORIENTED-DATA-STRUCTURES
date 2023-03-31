@@ -48,19 +48,19 @@ def infix2postfix(exp):
                         break 
                     else :
                         if pri[ch] <= pri[s.peek()]:
-                            postfix += str(s.pop())
+                            postfix += str(s.pop()) + ' '
                         else : break
                 s.push(ch)
         elif ch == '(':
             s.push(ch)
         elif ch == ')':
             while s.peek() != '(':
-                postfix += str(s.pop())
+                postfix += str(s.pop()) + ' '
             s.pop()
         else :
-            postfix += ch
+            postfix += ch + ' '
     while not s.isEmpty():
-        postfix += str(s.pop())
+        postfix += str(s.pop()) + ' '
     return postfix
 
 print(" ***Infix to Postfix***" )
